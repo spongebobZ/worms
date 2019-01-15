@@ -4,7 +4,7 @@ import re
 
 
 def szpt_worm():
-    content = requests.get('http://www.szpt.edu.cn', proxies={'http': 'http://proxy.tencent.com:8080'}).content
+    content = requests.get('http://www.szpt.edu.cn', proxies={'http': 'http://proxy.xxx.com:8080'}).content
     soup = BeautifulSoup(content, 'html.parser')
     print(soup.title)  # 第一个title标签
     print(soup.title.name)  # 第一个 title 标签的标签名称
